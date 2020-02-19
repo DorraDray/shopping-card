@@ -1,0 +1,136 @@
+#nav{
+    background-color:#353A40;
+    color: black;
+}
+#shoppingcard{
+    font-size:25px;
+    line-height: 20px;
+    color:#259E41;
+    font-weight: 500;
+
+
+}
+
+
+#big-div-shopping-bag{
+
+background-color: rgb(211, 208, 208);
+height: 1000px;
+width: 100%;
+padding-top: 50px;
+
+
+}
+#account {
+    position: absolute;
+    right: 0;
+}
+#navbarNavDropdown {
+    position: relative;
+}
+.shopping-bag{
+    height: 54px;
+    width: 1141px;
+    background-color: rgb(46, 45, 45);
+    margin-left: 60px;
+    color:white ;
+    display: flex;
+    font-size: 12px;
+    line-height: 17px;
+    margin-top: 20px;
+    margin-left: 105px;
+  
+    
+}
+
+.shopping-bag i{
+    
+    margin-top: 20px;
+    margin-left: 50px;
+  
+    
+}
+.shopping-bag h5{
+    
+    margin-top: 12px;
+    margin-left: 5px;
+  
+    
+}
+#id-container{
+    background-color: white;
+    width: 1346px;
+}
+#sbedri {
+    margin-left:0px;
+    margin-top: 100px;
+    font-size: 20px;
+    line-height: 17px;
+    font-weight: 800;
+}
+#bag {
+    margin-left:00px;
+    margin-top: 100px;
+    font-size: 20px;
+    line-height: 17px;
+    font-weight: 800;
+}
+#computer {
+    margin-left:00px;
+    margin-top: 100px;
+    font-size: 20px;
+    line-height: 17px;
+    font-weight: 800;
+}
+.btn-add{
+    
+    width: 25px;
+    height: 25px;
+    background: rgb(32, 164, 66);
+    border-radius: 50%;
+    text-align: center;
+    /* padding: 2px; */
+    display: inline-block;
+    color: white;
+}
+   .btn-mines{
+    
+    width: 25px;
+    height: 25px;
+    background: rgb(32, 164, 66);
+    border-radius: 50%;
+    text-align: center;
+    /* padding: 2px; */
+    display: inline-block;
+    color: white;
+} 
+#div-btn-add-mines-1{
+    padding-top: 100px;
+}
+#div-btn-add-mines-2{
+    padding-top: 100px;
+}
+#div-btn-add-mines-3{
+    padding-top: 100px;
+}
+
+#span-price-1{
+    width: 100px;
+    height: 100px;
+}
+.price-1{
+   
+    align-items: center;
+}
+.price-2{
+   
+    align-items: center;
+}
+.price-3{
+   
+    align-items: center;
+}
+
+.div-price{
+    padding-top: 100px;
+}
