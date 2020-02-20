@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="style.css">
     <!--load all styles -->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="script.js"></script>
+    
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- <script src="https://kit.fontawesome.com/cd8a6ed897.js" crossorigin="anonymous"></script> -->
     <script src="https://kit.fontawesome.com/cd8a6ed897.js" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/cd8a6ed897.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="script.js"></script>
+    
   </head>
 <body>
     <header>
@@ -79,52 +80,61 @@
                 <div>
                     <div class="shopping-bag">
                         <i class="fas fa-shopping-cart"></i>
-                        <h5>Shopping Bag Total : <span id="price-all">   </span></h5>
+                        <h5>Shopping Bag Total : <span id="price-all">  0$</span></h5>
                     </div>
                     <div id="id-container"class="container">
                         <div class="row">
-                          <div class="col-2 col-sm-2"></div>
-                          <div class="col-3 col-sm-3"><img src="./Capture3.PNG"height="190px"/>  </div>
-                          <div id="sbedri"class="col-3 col-sm-3">Sbedri Fila</div>
-                          <div id="div-btn-add-mines-1"class="col-2 col-sm-2">
+                         <div id="divSbedri" style="display: flex;justify-content: space-around;width: 100%; padding-right: 50px;">
+                            <div id="icon1"class="col-2 col-sm-2"><i onclick="supprimerArticle1()"class="fas fa-times"></i><i class="fas fa-heart"></i></div>
+                            <div class="col-3 col-sm-3"><img src="./Capture3.PNG"height="190px"/>  </div>
+                            <div id="sbedri"class="col-3 col-sm-3">Sbedri Fila</div>
+                            <div id="div-btn-add-mines-1"class="col-2 col-sm-2">
                               
-                            <span onclick="addArticle1()"class="btn-add"> + </span>
+                              <span onclick="addArticle1()"class="btn-add"> + </span>
                             
-                            <span id="span-price-1">0</span>
+                              <span id="span-price-1" >0</span>
 
-                            <span class="btn-mines"> - </span>
-                          </div>
-                          <div class="div-price"class="col-2 col-sm-2"><span id ="price-article1"class="price-1">0</span></div>
+                              <span onclick="deleteArticle1()"class="btn-mines"> - </span>
+                            </div>
+
+                            <div class="div-price"class="col-2 col-sm-2"><span id ="price-article1"class="price-1">0$</span></div>
+                         </div>
                           <!-- Force next columns to break to new line at md breakpoint and up -->
+                          
                           <div class="w-100 d-none d-md-block"></div>
-                      
-                          <div class="col-2 col-sm-2">.col-6 .col-sm-4</div>
-                          <div class="col-3 col-sm-3"><img src="./Capture4.PNG" height="215px"/></div>
-                          <div id="bag"class="col-3 col-sm-3">Black Bag</div>
-                          <div id="div-btn-add-mines-2"class="col-2 col-sm-2">
-                            <span class="btn-add"> + </span>
-                            
-                            <span id="span-price-2">0</span>
 
-                            <span class="btn-mines"> - </span>
+                          <div id="divBag" style="display: flex;justify-content: space-around;width: 100%; padding-right: 50px;">
+                            <div id="icon1"class="col-2 col-sm-2"><i onclick="supprimerArticle2()"class="fas fa-times"></i><i class="fas fa-heart"></i></div>
+                            <div class="col-3 col-sm-3"><img src="./Capture4.PNG" height="215px"/></div>
+                            <div id="bag"class="col-3 col-sm-3">Black Bag</div>
+                            <div id="div-btn-add-mines-2"class="col-2 col-sm-2">
+                              <span onclick="addArticle2()"class="btn-add"> + </span>
+                            
+                              <span id="span-price-2">0</span>
+
+                              <span onclick="deleteArticle2()"class="btn-mines"> - </span>
+                            </div>
+                            <div class="div-price" class="col-2 col-sm-2"><span id ="price-article2"class="price-2">0$</span></div>
+                          
                           </div>
-                          <div class="div-price" class="col-2 col-sm-2"><span class="price-2">0$</span></div>
+
                           <div class="w-100 d-none d-md-block"></div>
-                      
-                          <div class="col-2 col-sm-2"><i class="fal fa-times"></i><i class="fas fa-heart"></i></div>
-                          <div class="col-3 col-sm-3"><img src="./Capture5.PNG"/></div>
-                          <div id="computer"class="col-3 col-sm-3">Computer</div>
-                          <div id="div-btn-add-mines-2"class="col-2 col-sm-2">
-                            <span class="btn-add"> + </span>
-                            
-                            <span id="span-price-3">0</span>
 
-                            <span class="btn-mines"> - </span>
+                          <div id="comp" style="display: flex;justify-content: space-around;width: 100%; padding-right: 50px;">
+                            <div id="icon1"class="col-2 col-sm-2"><i onclick="supprimerArticle3()" class="fas fa-times"></i><i class="fas fa-heart"></i></div>
+                            <div class="col-3 col-sm-3"><img src="./Capture5.PNG"/></div>
+                            <div id="computer"class="col-3 col-sm-3">Computer</div>
+                            <div id="div-btn-add-mines-2"class="col-2 col-sm-2">
+                              <span onclick="addArticle3()"class="btn-add"> + </span>
+                            
+                              <span id="span-price-3">0</span>
+
+                              <span onclick="deleteArticle3()"class="btn-mines"> - </span>
+                            </div>
+                            <div class="div-price"class="col-2 col-sm-2"><span id ="price-article3"class="price-3">0$</span></div>
                           </div>
-                          <div class="div-price"class="col-2 col-sm-2"><span class="price-3">0$</span></div>
                         </div>
                       </div>
-                </div>
 
             </div>
 
@@ -136,5 +146,6 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
